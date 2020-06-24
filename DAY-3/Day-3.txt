@@ -1,0 +1,92 @@
+GoodAfterNoon To All
+==================
+
+
+To Day Agenda
+============
+Introduction To DjangoFramework
+
+in python so many frameworks 
+
+django framework powerful framework secure
+flask 
+webapp
+cherrypy
+bottle
+
+. Django is a free and opensource webappliclation framework, written in python
+.it is  maintained by the DSF (django software foundation)
+.django is rapid development paragramatic design
+
+django was developed by lawrance, siman willison
+ 
+django name famous for gurtarist dajngo reingdart
+
+django was developed in year 2003 
+open sourced in 2005
+django first verion released in year 2008 version1.1
+django second version released in year 2018 version 2.1
+django second version released in year 2019 version 3.1
+
+framework
+========
+it is a platform for developing appliclations it include in code libraries to compile and other programs
+
+who uses django
+istgram
+printest
+mozilla
+bitbucket
+the wishington times
+
+features of Django
+==============
+opensource
+fast working
+fully loaded
+scalable
+secure
+
+MVC&MVT Architectures
+
+Model---> backed storage database 
+view --->frontend ui presentation logic
+controller--business logic 
+
+MVT
+===
+Model- database logic orm(object relational mapping)
+view-lt act as an controller business logic(functions)
+Template- frontend ui presentation logic(html,css js)
+controller is handled by the fraemwork 
+
+(gmail/,view.gmail,name='gmil')
+
+Editor Installation
+==============
+notepad++
+sublimetext3
+vs code
+atom
+pycham
+brackets
+
+ProjectCreation
+
+pip install djnago
+
+django-admin startproject demo_project
+
+manage.py
+=======
+this file us used to interact with your project via the command python manage.py runserver
+for getting this command can be executed by manage.py
+
+python mange.py help
+
+init= it is python package
+
+settings.py:-
+
+
+

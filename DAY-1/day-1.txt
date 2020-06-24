@@ -1,0 +1,59 @@
+Good Afternoon To All
+===================
+
+3 weeks 21 -3 18 days 36 hours  perday 2hours   2-4
+
+
+
+
+Today Agenda
+===========
+.Environment Setup
+
+OOPS
+=====
+class
+  class is collection variables and methods
+	 syntax:
+		class classname():
+			variables
+			methods
+	how to call class
+		classname.varablename
+                                           classname.methodname
+
+object
+=====
+   object is an instance of a class
+            syntax
+                        obj=classname()
+    	obj.a
+   	obj.add()
+
+constructors
+==========
+  constructor is a special type of method(function) which is used to initlize instance members of a  class
+
+the main advantage of constructors is without using object we will function
+   constructors  can be used two types
+	a. paramitarized constructor(abc,a,b)
+	b. non paramatrized constructor(abc)
+
+syntax:-non paramatrized constructor(xyz)
+    class classname():
+          def __init__(self):
+             print('this is non paramatrized constructor ')
+
+syntax:-paramatrized constructor(self,a,b):
+def  __init__(self,a,b):
+     print('this is paramatrized constructor ')
+
+
+
+
+
+    
+
+  
+
+

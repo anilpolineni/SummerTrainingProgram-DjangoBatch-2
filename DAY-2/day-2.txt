@@ -1,0 +1,47 @@
+To Day Agenda
+============
+continue constructor
+
+Inheritance
+
+in python inheritance is a powerful ferture in object oriented programming
+ inherutance allows us to define a class we have methods and properties
+in we have two classes Base class or Parent class child class or derived class
+
+# syntax inheritance:
+class childclass(pasrent clsss):
+
+types of inheritance
+1. single level inheritance
+-----> in single level inheritance only one parent and one child class
+
+2.multilevel inheritance
+
+---->in multilevel in heritance one or more parent  classes and one or more child classes
+
+3.multiple inheritance
+
+-----> in multiple inheritance more than one parent class(Base class) and one child class 
+
+
+packages &Modules
+ 
+
+package is a collection of modules
+
+module is a collection of functions or classes
+
+how to to accessing modules import module name 
+
+from packagename import os
+
+from packagename.os import getcwd
+
+ from pacjage.module  import *
+
+
+
+
+
+
+
