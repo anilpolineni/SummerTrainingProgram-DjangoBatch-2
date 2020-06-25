@@ -1,0 +1,30 @@
+GoodAfternoon To All
+=================
+
+To Day Agenda
+===========
+* continue Project creation
+*App Creation
+------>django-admin startapp appname
+                           (or)
+------>python manage.py startapp appname
+
+* How to Run server
+
+--->python manage.py runserver
+
+* URL mapping(creation),
+        path('home/',views.home,name="home")
+
+* HttpResponse in views
+* Static values passing with HttpResponse
+
+---->urls.py — This file can define the routes / API Endpoints itself or You can just write your Endpoints in the respective django application and include the application urls.py file
+--->admin.py — This file is used for registering your django models to the Django Administration. We will be using django-import-export package for importing and exporting the data through Django Administration.
+
+-->apps.py — This file is created to help the user include any application configuration for the app
+--->models.py — This file is used to write Class based Models for our Django Applications.
+--->tests.py — This file is used to write test cases for the Application. For time being we will not go into the details of this.
+
+--->HttpResponse is a response class with string data. While HttpRequest is created by Django, HttpResponse is created by programmer.
+
