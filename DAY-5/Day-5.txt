@@ -14,7 +14,7 @@ DTL (Django Template Language)
 
 Arbitary logics
 
- {{ name}}--->expression
+ {{ name}}--->expression synatx
 
 conditions
 =========
@@ -29,9 +29,7 @@ Looping
 {% endfor %}
 
 
-
-
-HttpRequests And Response
+HttpRequests And HttpResponse
 ---------------------------------------
 GET-->The GET method requests a representation of the specified resource. Requests using GET should only retrieve data.
 
