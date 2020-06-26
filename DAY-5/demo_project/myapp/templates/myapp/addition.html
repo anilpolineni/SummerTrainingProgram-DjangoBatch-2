@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::Addition::</title>
+</head>
+<body>
+	<center>
+	<h1> Add To Numbers</h1>
+	<form action="{% url 'addition' %}" method="POST">
+		{% csrf_token %}
+
+		Num1:-<input type="text" name="num1"><br><br>
+		Num2:-<input type="text" name="num2"><br><br>
+		<input type="submit" value="Add">
+		<h1>Total res={{res}}</h1>
+	</form>
+	</center>
+</body>
+</html>

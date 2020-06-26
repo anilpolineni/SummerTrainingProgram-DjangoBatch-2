@@ -1,0 +1,43 @@
+GoodAfterNoon To All
+=================
+
+To Day Agenda
+============
+
+Django Templates
+------------------------
+* Django provides a convenient way to generate dynamic HTML pages by using its template system.
+*Django template engine is used to separate the design from the python code and allows us to build dynamic web pages.
+
+
+DTL (Django Template Language)
+
+Arbitary logics
+
+ {{ name}}--->expression
+
+conditions
+=========
+{% if condition %}
+{% endif %}
+{% else %}
+
+Looping
+
+{% for i in range %}
+
+{% endfor %}
+
+
+
+
+HttpRequests And Response
+---------------------------------------
+GET-->The GET method requests a representation of the specified resource. Requests using GET should only retrieve data.
+
+POST
+The POST method is used to submit an entity to the specified resource, often causing a change in state or side effects on the server.
+
+
+
+
