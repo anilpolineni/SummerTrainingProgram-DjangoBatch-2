@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::Addition::</title>
+	<meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<center>
+
+		<div class="col-sm-4">
+			
+	<h1> Add To Numbers</h1>
+	<img src="{% static  'images/user.png'%}" alt="logo">
+	<form action="{% url 'addition' %}" method="POST">
+		{% csrf_token %}
+
+		<label>Num1:-</label>
+		<input type="text" name="num1" placeholder="Enter the num1 value" class="form-control" required>
+
+		<label>Num2:-</label>
+		<input type="text" name="num2" placeholder="Enter num2 value" class="form-control" required>
+
+		<div class="text-center">
+			<input type="submit" value="Add" class=" btn btn-primary btn-lg">
+			
+		</div>
+
+		<h1>Total res={{val1}}+{{val2}}={{res}}</h1>
+	</form>
+	</center>
+	</div>
+</body>
+</html>

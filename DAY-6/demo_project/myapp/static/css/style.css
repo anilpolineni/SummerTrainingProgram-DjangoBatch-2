@@ -1,0 +1,16 @@
+h1,h2,h3,h4,h5,h6{
+	color: red;
+	font-size: 50px;
+	background-color: #dd4;
+	text-align: center;
+	border: 5px double green; /*solid,dashed,double,dotted*/
+	border-radius: 1%;
+	box-shadow: 5px 10px red;
+	border-right-color: blue;
+	border-top-color: pink;
+	border-left-color: orange;
+	border-bottom-color: violet;
+}
+body{
+	background-color: black;
+}

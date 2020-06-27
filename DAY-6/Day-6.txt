@@ -1,0 +1,20 @@
+Good Afternoon To All
+=================
+
+ToDay Agenda
+-------------------
+
+StaticFiles Handling
+
+
+In a web application, apart from business logic and data handling, we also need to handle and manage 
+static resources like 
+CSS,  
+
+Inline css
+internal css
+external css
+
+images,
+
+JavaScript 
