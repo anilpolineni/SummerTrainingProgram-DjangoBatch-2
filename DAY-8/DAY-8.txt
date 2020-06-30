@@ -1,0 +1,24 @@
+model, model Creation, migrations, ORM
+--------------------------------------
+model:
+	from django.db.models
+model creation:
+	register model
+sync with database(migrations)
+	migrations: python manage.py makemigations 
+	migrate: python manage.py migrate
+	
+ORM(object relational mapper):
+	fields (EX: CharFeild, DateField, IntegerField,etc..)
+	field options (Ex: max_length, null, choises. etc)
+	
+	Relationships
+		ForeignKey
+		ManyToManyField
+		OneToManyField
+		ManyToOneFeild
+		OneToOneFeild etc..
+	creating:
+		Register.objects.create(arg..)
+	reading:
+		Register.object.all()
