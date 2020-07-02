@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Student Details Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+{% if messages %}
+    {% for msg in messages %}
+        <div class="alert alert-{{msg.tags}}">{{ msg}}</div>
+    {% endfor %}
+{% endif %}
+<table class="table">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Roll Number</th>
+        <th>Age</th>
+        <th>Email</th>
+        <th>Gender</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for i in data %}
+    <tr>
+        <td>{{ i.name }}</td>
+        <td>{{ i.roll_num }}</td>
+        <td>{{ i.age }}</td>
+        <td>{{ i.email }}</td>
+        <td>{{ i.gender }}</td>
+        <td><a class="btn btn-info" href="{% url 'edit' roll=i.roll_num %}">Edit</a></td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>

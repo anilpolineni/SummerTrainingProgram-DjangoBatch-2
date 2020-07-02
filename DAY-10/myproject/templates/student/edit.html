@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Student Edit Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <div class="card-header">SignUp</div>
+        <div class="card-body">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <input type="text" name="name" placeholder="Student Name" value="{{data.name}}"><br>
+                <input type="text" name="roll_num" placeholder="Roll  Number" value="{{data.roll_num}}"><br>
+                <input type="email" name="email" placeholder="Email" value="{{data.email}}"><br>
+                <input type="text" name="age" placeholder="Age" value="{{data.age}}"><br>
+
+                Male :<input type="radio" name="gender" value="Male" {% if data.gender %}checked{% endif %}><br>
+                Female :<input type="radio" name="gender" value="Female" {% if data.gender %}checked{% endif %}><br>
+        </div>
+        <div class="card-footer">
+            <input type="submit" name="submit" value="Update">
+        </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

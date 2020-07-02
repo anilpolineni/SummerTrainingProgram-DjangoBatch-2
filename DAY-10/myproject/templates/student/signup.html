@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Student Signup Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <div class="card-header">SignUp</div>
+        <div class="card-body">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <input type="text" name="name" placeholder="Student Name"><br>
+                <input type="text" name="roll_num" placeholder="Roll  Number"><br>
+                <input type="email" name="email" placeholder="Email"><br>
+                <input type="text" name="age" placeholder="Age"><br>
+
+                Male :<input type="radio" name="gender" value="Male"><br>
+                Female :<input type="radio" name="gender" value="Female"><br>
+        </div>
+        <div class="card-footer">
+            <input type="submit" name="submit" value="save">
+        </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

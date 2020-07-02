@@ -1,0 +1,22 @@
+<html>
+<head>
+    {% load static %}
+    <title>Register</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <form action="{% url 'register' %}" method="post">
+        {% csrf_token %}
+        name : <input type="text" name="name" placeholder="Enter your name"><br>
+        Phone Number :<input type="tel" name="phone" placeholder="Enter your mobile number"><br>
+        mail Id :<input type="email" name="mail" placeholder="enter Mail id"><br>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+    </div>
+</div>
+
+</body>
+</html>
