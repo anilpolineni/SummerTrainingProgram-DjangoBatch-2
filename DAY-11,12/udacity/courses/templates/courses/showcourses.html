@@ -1,0 +1,52 @@
+{% extends 'courses/home.html'%}
+
+{% block title%} Show Courses {% endblock title%}
+
+{% block content%}
+<style>
+	.table-hover tbody tr:hover td,.table-hover tbody tr:hover th {background-color: lightgreen;}
+</style>
+
+<div class="container-fluid" style="margin-top: 5%;">
+	<table class="table table-bordered table-hover" id="table-hover">
+		<thead>
+			<tr class="bg-primary text-white text-center">
+				<th>S.no</th>
+				<th>Course_Name</th>
+				<th>Course_image</th>
+				<th>Course_Description</th>
+				<th colspan="2">Operations</th>
+			</tr>
+			<tbody>
+				<tr>
+					{% for course in courses %}
+
+					<td>{{forloop.counter}}</td>
+					<td>{{course.course_name}}</td>
+					<td><img src="{{course.image}}" style="height:80px; "></td>
+					<td>{{course.description}}</td>
+					<!-- <td>
+						<a href="" class="btn btn-outline-primary">Edit</a>
+					</td>
+					<td>
+						<a href="{% url 'coursedelete'  course.id %}" class="btn btn-outline-danger">Delete</a>
+					</td> -->
+					<td>
+						<a href=" {% url 'courseedit' course.id %}"  title="EditData">
+							<i class='fas fa-edit' style='font-size:30px;color:green'></i>
+						</a>
+					</td>
+
+					<td>
+						<a href="{% url 'coursedelete'  course.id %}">
+							<i class='fas fa-trash' style='font-size:30px;color:red'></i>
+						</a>
+					</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</thead>
+	</table>
+	</div>
+
+{% endblock content %}

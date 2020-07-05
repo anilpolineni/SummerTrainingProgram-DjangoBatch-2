@@ -1,0 +1,25 @@
+{% extends 'courses/home.html'%}
+
+{% block title%}EditCourse{% endblock title%}
+
+{% block content%}
+
+	<div class="container col-sm-4  offset-sm-3 card card-body" style="margin-top: 3%;">
+		<div class="border rounded" style="background: #c32;">
+			<h1 class="text-center" style="color: green">AddCourse</h1>
+			<form action="{% url 'courseedit' data.id %}"  method="POST" class="m-5">
+				
+				{% csrf_token %}
+
+				<strong>{{form.as_p}}</strong>
+				<div class="text-center">
+					<input type="submit" value="Update" class="btn btn-outline-warning btn-lg">
+					
+				</div>
+				
+			</form>
+			
+		</div>
+		
+	</div>
+{% endblock content%}

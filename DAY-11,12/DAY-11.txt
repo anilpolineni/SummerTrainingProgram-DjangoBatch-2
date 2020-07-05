@@ -1,0 +1,63 @@
+GoodAfternoon All
+===============
+Today Agenda 
+===========
+. CURD Operations Using ModelForms
+. Form Validations
+
+What is Django Model Form 
+
+It is a class which is used to create an HTML form by using the Model.
+ 
+It is an efficient way to create a form without writing HTML code. 
+
+Django automatically does it for us to reduce the application development time.
+
+
+. Form Validations
+The is_valid() method is used to perform validation for each field of the form, it is defined in Django Form class. It returns True if data is valid and place all data into a cleaned_data attribute
+
+
+
+instance keyword argument is passed the model whose relations that the formset will edit.
+
+AppName
+-------------
+courses
+
+class namecourse
+
+course name
+
+course image
+
+course description
+
+
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+{{form.as_p}}
+{{form.as_ul}}
+
+{{form.as_table}}
+
+form.is_valid()
+
+
+value={{a.name}}
+
+instace=data
+
+
+
+
+{% extends 'home.html'%}
+
+
+{% block content %}  or {% block body %}
+
+
+
+{% endblock content%}
+
