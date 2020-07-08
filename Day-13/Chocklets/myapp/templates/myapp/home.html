@@ -1,0 +1,8 @@
+{% extends 'myapp/index.html' %}
+
+{% block body %}
+<h1>Weolcome To {{data}}</h1>
+<a href="{% url 'changepassword' data %}"> Change password</a>
+<form>
+</form>
+{% endblock %}

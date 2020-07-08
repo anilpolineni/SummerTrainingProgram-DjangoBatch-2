@@ -1,0 +1,26 @@
+{% extends 'myapp/index.html' %}
+{% block body%}
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4"></div>
+		<div class="col-sm-4">
+			<div class="card">
+				<div class="card-header">
+					login
+				</div>
+				<form action="{% url 'login' %}" method="POST">
+					{% csrf_token %}
+				<div class="card-body">
+					Username:{{form.username}}
+					Password:<input type="password" name="password">
+				</div>
+				<a href="{% url 'forgotpassword' %}">Forgotpassword</a>
+				<div class="card-footer">
+					<input type="submit" class =" btn btn-primary" value="Login">
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+{% endblock %}
