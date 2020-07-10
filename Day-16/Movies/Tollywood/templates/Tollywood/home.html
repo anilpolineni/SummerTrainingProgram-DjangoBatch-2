@@ -1,0 +1,15 @@
+{% extends 'Tollywood/index.html' %}
+{% block body%}
+	<div class="container">
+		<h1>
+			Welcome to {{user.username}}
+		</h1>
+		<h1>
+			name -->{{user.first_name}}{{user.last_name}}
+		</h1>
+		<h1>
+			{{data.name}}<br>{{data.age}}<br>{{data.salary}}<br>{{data.empid}}
+
+		</h1>
+	</div>
+{% endblock %}

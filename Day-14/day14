@@ -6,4 +6,60 @@ today agenda:
 
 -->mail sending
 -->registration and login
+	-->change password
+			-->requirements
+					user already login
+						-->old password
+						-->new password
+						-->conform password
+			-->user after login 
+			
+	-->forgotpassword
+			requrements
+			-->user already registered in our website
+			-->compalasary he have valid data
+					-->user before login
+
+-->image/file uploading
+	
+
 -->User auhtentication  
+
+
+
+
+
+
+
+--->To day agenda
+
+	-->Authentication
+	
+	
+	--->sigin and signup -->enable user not authenticated
+	
+	-->profile creation
+	-->Fileuploading
+	
+-->friday(day17)
+	-->hosting -->with out using external database, internal database(sqlite3)
+	
+-->satarday(day18)
+	-->hosting --> with databas(postgressql)
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+

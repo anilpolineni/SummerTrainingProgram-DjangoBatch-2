@@ -1,0 +1,28 @@
+{% extends 'Tollywood/index.html' %}
+
+{% block body %}
+<div class="container">
+		<div class="row">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4">
+				<div class="card">
+					<div class="card-header">
+					Sign in				
+					</div>
+					<div class="card-body">
+						<form action="" method="POST">
+							{% csrf_token %}
+						{{form.as_p}}
+					</div>
+					<div class="card-footer">
+						<input type="submit" value="Sigin" class="btn btn-primary">
+						</form>				
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+{% endblock%}
