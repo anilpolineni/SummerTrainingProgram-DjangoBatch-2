@@ -1,0 +1,23 @@
+{% extends 'Tollywood/index.html' %}
+{% block body %}
+<div class="row">
+	<div class="col-sm-4"></div>
+	<div class="col-sm-4">
+		<div class="card">
+			<div class="card-header">
+				<h1>{{user.username}}</h1>
+			</div>
+			<div class="card-body">
+				<h2>
+				Firstname:{{user.first_name}}</h2>
+				<h2>
+				Lastname:{{user.last_name}}</h2>
+			</div>
+			<div class="card-footer">
+				welcome to {{user.username}}
+			</div>
+			
+		</div>
+	</div>
+</div>
+{% endblock %}

@@ -23,5 +23,8 @@ urlpatterns = [
     path('home/',views.home,name="home"),
     path('profile/',views.profile,name="profile"),
     path('signin/',LoginView.as_view(template_name='Tollywood/signin.html'),name="signin"),
-    path('signout/',LogoutView.as_view(template_name='Tollywood/signout.html'),name="signout")
+    path('signout/',LogoutView.as_view(template_name='Tollywood/signout.html'),name="signout"),
+    path('addmovie/',views.addmovie,name='addmovie'),
+    path('Tollywoodmovies/',views.Tollywoodmovies,name="Tollywoodmovies"),
+    
 ]

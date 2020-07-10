@@ -37,7 +37,17 @@ today agenda:
 	
 	
 	--->sigin and signup -->enable user not authenticated
+	-->sign out -->enable -->if user login/authenticated
 	
+	
+	--->model in admin page
+			-->Tollywood Movies
+					-->Movie name
+					-->Heroname
+					-->Heroine name
+					-->Director
+					-->producer
+					-->Actors
 	-->profile creation
 	-->Fileuploading
 	

@@ -117,8 +117,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-
+#Movies/Tollywood/static/images/
 STATIC_URL = '/static/'
+MEDIA_ROOT=os.path.join(BASE_DIR,'Tollywood/static/images')
+MEDIA_URL='/images/'
 
 LOGIN_REDIRECT_URL='profile'
 
