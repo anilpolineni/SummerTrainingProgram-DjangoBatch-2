@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::attach::</title>
+</head>
+<body>
+	<form action="{% url 'attach' %}" method="POST" enctype="multipart/form-data">
+		{% csrf_token %}
+		<input type="text" name="email" placeholder="Enter Email"><br>
+		<input type="text" name="sub" placeholder="Enter Subject"><br>
+		<textarea name="msg" rows="5"  placeholder="Enter Message">
+			
+		</textarea><br>
+		<input type="file" name="file" placeholder="Select folder">
+		<input type="submit" value="SEND">
+	</form>
+</body>
+</html>

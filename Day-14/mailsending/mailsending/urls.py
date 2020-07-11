@@ -20,4 +20,5 @@ from app1 import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('mail/',views.mail,name="mail"),
+    path('attach/',views.attach,name="attach"),
 ]
