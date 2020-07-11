@@ -8,17 +8,20 @@
 	{% for movie in data %}	
 				
 			<div class="col-sm-3 mt-3" style="width: 100%;">
-				<img src="{% static 'movie.poster' %}" height="360" width="300">
-				<h3 class="text-primary">MOVIE:{{movie.moviename}}</h3>
-				<h3 class="text-primary">HERO NAME:{{movie.heroname}}</h3>
-				<h3 class="text-primary">HEROINE NAME:{{movie.heroinename}}</h3>
-				<h3 class="text-primary">DIRECTOR:{{movie.director}}</h3>
-				<h3 class="text-primary">PRODUCER:{{movie.producer}}</h3>
-				<h3 class="text-primary">CAST:{{movie.cast}}</h3>
+				<img src="/static/images/{{movie.poster}}" height="360" width="300">
+				<p class="text-primary">MOVIE:{{movie.moviename}}</p>
+				<p class="text-primary">HERO NAME:{{movie.heroname}}</p>
+				<p class="text-primary">HEROINE NAME:{{movie.heroinename}}</p>
+				<p class="text-primary">DIRECTOR:{{movie.director}}</p>
+				<p class="text-primary">PRODUCER:{{movie.producer}}</p>
+				<p class="text-primary">CAST:{{movie.cast}}</p>
 		</div>
 	
 	{% endfor %}
 	</div>
 	</div>
-	</div>
+</div>
+
+
+	
 {% endblock %}
