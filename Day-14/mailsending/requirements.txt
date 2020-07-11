@@ -37,7 +37,7 @@ stevedore==2.0.0
 traitlets==4.3.2
 unittest-tap-reporting==0.2
 unittest-xml-reporting==2.1.0
-urllib3==1.21.1
+urllib3==1.24.2
 virtualenv==15.1.0
 virtualenv-clone==0.2.6
 virtualenvwrapper==4.7.2
