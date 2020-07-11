@@ -15,7 +15,11 @@
 				<p class="text-primary">DIRECTOR:{{movie.director}}</p>
 				<p class="text-primary">PRODUCER:{{movie.producer}}</p>
 				<p class="text-primary">CAST:{{movie.cast}}</p>
+				{% if user.is_authenticated %}
+				<a href="#" class="btn btn-info">Update</a> <a href="#" class="btn btn-danger">Delete</a>
+				{% endif %}
 		</div>
+		
 	
 	{% endfor %}
 	</div>
